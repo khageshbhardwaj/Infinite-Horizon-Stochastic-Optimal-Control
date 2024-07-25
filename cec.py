@@ -111,29 +111,6 @@ class CEC:
         u = sol.value(U[:, 0])
         return u
     
-        
-        # ######################################################################################################
-        # # TODO: define optimization solver
-        # nlp = {'x': ca.vertcat(U.reshape((-1,1)), E.reshape((-1,1))),
-        #        'f': objective_fun,
-        #        'g': opti.constraints()}
-
-        # solver = ca.nlpsol("S", "ipopt", nlp)
-        # sol = solver(
-        #     x0=...,  # TODO: initial guess
-        #     lbx=..., # TODO: lower bound on optimization variables
-        #     ubx=..., # TODO: upper bound on optimization variables
-        #     lbg=..., # TODO: lower bound on optimization constraints
-        #     ubg=..., # TODO: upper bound on optimization constraints
-        # )
-        # x = sol["x"]  # get the solution
-
-
-        # ######################################################################################################
-        # # TODO: extract the control input from the solution
-        # u = ...
-        # return u
-    
     
     def Error_NextState(self, i, cur_error, control):
         """ Compute next error state based on the dynamics """
