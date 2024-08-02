@@ -12,7 +12,6 @@ import utils
 #################################################################################################
 
 # initialization
-
 # intial state of the car
 x_init = 1.5
 y_init = 0.0
